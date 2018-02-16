@@ -8,5 +8,5 @@ class MainPage(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainPage),
+    (r'/service1/', MainPage),
 ], debug=True)
