@@ -1,0 +1,16 @@
+dispatch:
+  # Default service serves the typical web resources and all static resources.
+  - url: "*/favicon.ico"
+    service: default
+
+  # Default service serves simple hostname request.
+  - url: "micro-mavi.appspot.com/"
+    service: default
+
+  # Send all traffic to service1
+  - url: "*/service1/*"
+    service: service1
+
+  # Send all traffic to service2
+  - url: "*/service2/*"
+    service: service2
